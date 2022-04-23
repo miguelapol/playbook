@@ -33,6 +33,8 @@ app.get('/explorersInNode',(req,res)=>{
 });
 //aqui regresamos el objeto del explorer
 //localhost:3000/explorersInNode/juan
+//aqui usamos los query parameters
+
 app.get('/explorers/:name',(req,res)=>{
     const explorer={
         name:req.params.name,
