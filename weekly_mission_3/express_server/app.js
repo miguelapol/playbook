@@ -20,3 +20,14 @@ app.listen(port,()=>{
 app.get('/launchx',(req,res)=>{
     res.send('bienvenido a la nave espacial');
 });
+//agregamos una nueva ruta
+//localhost:3000/explorersInNode
+app.get('/explorersInNode',(req,res)=>{
+    const explorer={
+        name:'juan',
+        age:20,
+        country:'mexico',
+        msg:'hola'
+    }
+    res.send(explorer);
+});
