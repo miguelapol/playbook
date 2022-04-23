@@ -31,3 +31,14 @@ app.get('/explorersInNode',(req,res)=>{
     }
     res.send(explorer);
 });
+//aqui regresamos el objeto del explorer
+//localhost:3000/explorersInNode/juan
+app.get('/explorers/:name',(req,res)=>{
+    const explorer={
+        name:req.params.name,
+        age:20,
+        country:'mexico',
+        msg:'hola'
+    }
+    res.send(explorer);
+});
