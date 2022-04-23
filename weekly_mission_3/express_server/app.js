@@ -14,3 +14,9 @@ app.get('/',(req,res)=>{
 app.listen(port,()=>{
     console.log(`Server is up on port ${port}`);
 });
+//respondien al texto para el localhost:3000
+//aqui creamos el server
+//localhost:3000/launchx
+app.get('/launchx',(req,res)=>{
+    res.send('bienvenido a la nave espacial');
+});
